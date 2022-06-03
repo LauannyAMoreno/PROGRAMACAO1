@@ -6,18 +6,33 @@ informa se o saldo e positivo ou negativo
 #include<stdio.h> 
 int main()
 {
- float entradaseg, saidaseg,total diaseg;
- printf("informe a entredaseg\n");
- scanf("%f", &entradaseg);
- printf("informe a saidaseg");
- scanf("%f", &saidaseg);
- total diaseg= entradaseg-saidaseg
- printf("total diaseg:%f\n",total diaseg);
- 
- float entradater, saidater,total diater;
- printf("informe a entredater\n");
- scanf("%f", &entradaseg);
- printf("informe a saidater");
- scanf("%f", &saidater);
- total diater= entradater-saidater
- printf("total diater:%f\n",total diater);
+    float entradaseg, saidaseg, total;
+    printf("informe a entradaseg:\n");
+    scanf("%f",&entradaseg);
+    printf("informe a saidaseg:\n");
+    scanf("%f",&saidaseg);
+    total= entradaseg-saidaseg;
+    printf("total:%f\n",total);
+    if (total>=2000){
+        printf("saldo positivo\n");
+    }
+    else if (total>500){
+        printf("saldo negativo\n");
+    }
+
+
+    float entradater, saidater, totalter;
+    printf("informe a entradater:\n");
+    scanf("%f",&entradater);
+    printf("informe a saidater:\n");
+    scanf("%f",&saidater);
+    totalter= entradater-saidater;
+    printf("totalter:%f\n",totalter);
+    if (totalter>=2000){
+        printf("saldo psitivo\n");
+    }
+    else if (totalter>500){
+        printf("saldo negativo");
+    }
+    return 0;
+}
