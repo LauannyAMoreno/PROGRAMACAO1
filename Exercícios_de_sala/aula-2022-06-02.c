@@ -34,5 +34,46 @@ int main()
     else if (totalter>500){
         printf("saldo negativo");
     }
+    float entradaqua, saidaqua, totalqua;
+    printf("informe a entradaqua:\n");
+    scanf("%f",&entradaqua);
+    printf("informe a saidaqua:\n");
+    scanf("%f",&saidaqua);
+    totalqua= entradaqua-saidaqua;
+    printf("totalqua:%f\n",totalqua);
+    if (totalqua>=2000){
+        printf("positivo\n");
+    }
+    else if (totalqua<-500){
+        printf("negativo\n");
+    }
+
+
+    float entradaqui, saidaqui, totalqui;
+    printf("informe a entradaqui:\n");
+    scanf("%f",&entradaqui);
+    printf("informe a saidaqui:\n");
+    scanf("%f",&saidaqui);
+    totalqui= entradaqui-saidaqui;
+    printf("totalqui:%f\n",totalqui);
+    if (totalqui>=2000){
+        printf("saldo positivo\n");
+    }
+    else if (totalqui<-500){
+        printf("saldo negativo\n");
+    }
+float entradasex, saidasex, totalsex;
+    printf("informe a entradasex:\n");
+    scanf("%f",&entradasex);
+    printf("informe a saidasex:\n");
+    scanf("%f",&saidasex);
+    totalsex= entradasex-saidasex;
+    printf("totalsex:%f\n",totalsex);
+    if (totalsex>=2000){
+        printf("saldo psitivo\n");
+    }
+    else if (totalsex>500){
+        printf("saldo negativo");
+    }
     return 0;
 }
