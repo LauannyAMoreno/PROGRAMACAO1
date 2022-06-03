@@ -61,7 +61,19 @@ int main()
     }
     else if (totalqui<-500){
         printf("saldo negativo\n");
-  
+    }
+    float entradasexta, saidasexta, totalsexta;
+    printf("informe a entradasexta:\n");
+    scanf("%f",&entradasexta);
+    printf("informe a saidasexta:\n");
+    scanf("%f",&saidasexta);
+    totalsexta= entradasexta-saidasexta;
+    printf("totalsexta:%f\n",totalsexta);
+    if (totalsexta>=2000){
+        printf("saldo psitivo\n");
+    }
+    else if (totalsexta>500){
+        printf("saldo negativo");
     }
     return 0;
 }
